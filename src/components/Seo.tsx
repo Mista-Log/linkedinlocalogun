@@ -8,9 +8,9 @@ interface SeoProps {
 }
 
 const Seo = ({
-  title = "Ibrahim Oloyede | Computer Science Student",
-  description = "Portfolio website of Ibrahim Oloyede, A Computer Science Student specializing in Software Development.",
-  keywords = "Ibrahim Oloyede, Computer Science, Software developer, Python, Typescript, projects",
+  title = "LinkedinLocal Ogun",
+  description = "A community of tech enthusiasts in Ogun State, Nigeria, fostering collaboration and innovation.",
+  keywords = "LinkedinLocal, Ogun, tech community, networking, innovation",
   ogImage = "",
 }: SeoProps) => {
   return (
