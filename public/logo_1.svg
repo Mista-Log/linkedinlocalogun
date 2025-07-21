@@ -1,0 +1,12 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 501" width="500" height="501">
+	<title>logo_1</title>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 334px;fill: #0021ff;font-weight: 400;font-family: "BakbakOne-Regular", "Bakbak One" } 
+	</style>
+	<rect width="500" height="501" id="Color Fill 1" style="fill: #ffffff"/>
+	<text id="IO" style="transform: matrix(1,0,0,1,93,359)" >
+		<tspan x="0" y="0" class="t0">I</tspan><tspan  y="0" class="t0">O
+</tspan>
+	</text>
+</svg>
