@@ -18,7 +18,7 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
     // Retrieve and validate the saved theme during initialization
     const savedTheme = localStorage.getItem("theme") as Theme;
     const validThemes: Theme[] = ["blue", "dark", "purple"];
-    return validThemes.includes(savedTheme) ? savedTheme : "dark";
+    return validThemes.includes(savedTheme) ? savedTheme : "blue";
   });
 
   useEffect(() => {
