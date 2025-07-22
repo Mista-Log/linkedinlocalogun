@@ -60,11 +60,8 @@ const Navbar = () => {
                   alt="LinkedIn"
                   className="w-6 h-6"
                   />
-              <span className="text-xl font-extrabold text-transparent bg-clip-text"
-                    style={{
-                      fontFamily: "'Arial Black', sans-serif",
-                      backgroundImage: 'linear-gradient(to right, #0459ac, #0a66c2)'
-                    }}>LLO</span>
+              <span className="text-xl font-extrabold text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(to right, #0459ac, #0a66c2)', fontFamily: "'Arial Black', sans-serif"}}>LLO</span>
+            
             </a>
           </div>
 
