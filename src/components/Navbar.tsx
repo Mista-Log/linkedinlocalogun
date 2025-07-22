@@ -53,8 +53,18 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14">
           <div className="flex items-center">
-            <a href="/">
-              <span className="text-xl font-bold text-primary">LinkedinLocal Ogun</span>
+            
+            <a href="/" className="flex items-center gap-2">
+                  <img
+                  src="/linkedin-logo.png" 
+                  alt="LinkedIn"
+                  className="w-6 h-6"
+                  />
+              <span className="text-xl font-extrabold text-transparent bg-clip-text"
+                    style={{
+                      fontFamily: "'Arial Black', sans-serif",
+                      backgroundImage: 'linear-gradient(to right, #0459ac, #0a66c2)'
+                    }}>LLO</span>
             </a>
           </div>
 
