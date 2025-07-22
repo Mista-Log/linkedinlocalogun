@@ -8,7 +8,6 @@ import { useToast } from "@/hooks/use-toast";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const resumeUrl = Links.resume;
   const { toast } = useToast();
 
   const handledownload = () => {
@@ -38,7 +37,7 @@ const Navbar = () => {
     { name: "Register", href: "#register" },
     { name: "Speakers", href: "#speakers" },
     { name: "Sponsor", href: "#sponsor" },
-    { name: "Faq", href: "#achievements" },
+    { name: "Faq", href: "#faq" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -71,23 +70,11 @@ const Navbar = () => {
                   {link.name}
                 </a>
               ))}
-              <ThemeSwitcher />
-              <Button
-                size="sm"
-                className="ml-4"
-                asChild
-                onClick={handledownload}
-              >
-                <a href={resumeUrl} download="Ibrahim_Resume.pdf">
-                  Resume
-                </a>
-              </Button>
             </div>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
-            <ThemeSwitcher />
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="inline-flex items-center justify-center p-2 ml-2 rounded-md text-gray-400 hover:text-primary focus:outline-none"
@@ -141,11 +128,6 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <Button size="sm" className="ml-3 mt-2" asChild>
-              <a href={resumeUrl} download="Ibrahim_Resume.pdf">
-                Resume
-              </a>
-            </Button>
           </div>
         </div>
       )}
