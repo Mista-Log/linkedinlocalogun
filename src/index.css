@@ -8,13 +8,13 @@
   :root,
   .theme-blue {
     --background: 210 50% 98%;
-    --foreground: 215 25% 27%;
+    --foreground: 211 96% 34%;
 
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 27%;
+    --card-foreground: 211 96% 34%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 27%;
+    --popover-foreground: 211 96% 34%;
 
     --primary: 220 70% 50%;
     --primary-foreground: 210 40% 98%;
@@ -33,14 +33,14 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 215 25% 27%;
+    --ring: 211 96% 34%;
 
     --sidebar-background: 210 50% 98%;
     --sidebar-foreground: 215 25% 40%;
     --sidebar-primary: 220 70% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 210 50% 95%;
-    --sidebar-accent-foreground: 215 25% 27%;
+    --sidebar-accent-foreground: 211 96% 34%;
     --sidebar-border: 214.3 31.8% 91.4%;
     --sidebar-ring: 220 70% 50%;
 

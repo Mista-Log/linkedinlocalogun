@@ -12,13 +12,14 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import ScrollProgressBar from "@/components/ScrollProgressBar";
 import Seo from "@/components/Seo";
+import Home from "@/components/Home";
 
 const sections = [
-  "home",
   "about",
-  "projects",
-  "skills",
-  "achievements",
+  "register",
+  "speakers",
+  "sponsors",
+  "faq",
   "contact",
 ];
 
@@ -59,6 +60,7 @@ const Index = () => {
       <ScrollProgressBar />
       <Navbar />
       <Scrollspy items={sections} currentClassName="active" offset={-50}>
+        <Home />
         <HeroSection />
         <AboutSection />
         <ProjectsSection />

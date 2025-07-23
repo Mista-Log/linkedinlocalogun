@@ -41,49 +41,59 @@ const HeroSection = () => {
 
       <div className="section-container flex flex-col lg:flex-row items-center justify-between gap-10">
         <div className="flex flex-col max-w-xl space-y-6 text-center lg:text-left">
-          <motion.span
+          {/* <motion.span
             className="text-sm md:text-base font-medium text-primary opacity-90"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             Hello! I'm
-          </motion.span>
+          </motion.span> */}
 
           <motion.h1
-            className="text-4xl md:text-5xl lg:text-6xl font-bold"
+            className="text-4xl text-[#0459AC] md:text-5xl lg:text-6xl font-bold"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            Ibrahim{" "}
+            Welcome to{" "}
+            <span className="inline-flex items-center gap-2">
+              Linked
+              <img
+                src="/linkedin-logo.png" // replace with your actual image path
+                alt="LinkedIn"
+                className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16"
+              />
+            </span>
+            <br />
+             Local Ogun{" "}
             <motion.span
-              className="highlight-text"
+              className="highlight-text text-[#0459AC]"
               initial={{ backgroundSize: "0% 3px" }}
               animate={{ backgroundSize: "100% 3px" }}
               transition={{ duration: 1, delay: 1.2 }}
             >
-              Oloyede
+              2025
             </motion.span>
           </motion.h1>
 
           <motion.p
-            className="text-xl md:text-2xl text-muted-foreground font-light"
+            className="text-xl md:text-3xl text-muted-foreground font-light"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            A Software Developer
+            Where Connections Spark Growth
           </motion.p>
 
-          <motion.p
+          {/* <motion.p
             className="text-muted-foreground"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            Engineering Problems with code and Designing them with APIs
-          </motion.p>
+            Where Connections Spark Growth
+          </motion.p> */}
 
           <motion.div
             className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 relative z-10"
@@ -100,7 +110,7 @@ const HeroSection = () => {
               >
                 <a href="#contact" aria-label="Go to contact section">
                   <Button className="min-w-[120px] py-3 text-base">
-                    Contact Me
+                    Register Now
                   </Button>
                 </a>
               </motion.div>
@@ -116,33 +126,11 @@ const HeroSection = () => {
                     variant="outline"
                     className="min-w-[120px] py-3 text-base"
                   >
-                    View Projects
+                    Become a Sponsor
                   </Button>
                 </a>
               </motion.div>
             </motion.div>
-
-            {/* Social Links */}
-            <div className="flex items-center gap-4 ml-0 lg:ml-4 mt-4 lg:mt-0">
-              {[
-                { icon: Github, link: Links.github, label: "GitHub" },
-                { icon: Linkedin, link: Links.linkedin, label: "LinkedIn" },
-                { icon: Mail, link: Links.email, label: "Email" },
-              ].map((social, index) => (
-                <motion.a
-                  key={index}
-                  href={social.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-primary transition-colors p-2"
-                  whileHover={{ scale: 1.2, rotate: 5 }}
-                  whileTap={{ scale: 0.9 }}
-                  aria-label={social.label}
-                >
-                  <social.icon size={24} />
-                </motion.a>
-              ))}
-            </div>
           </motion.div>
         </div>
 
@@ -177,7 +165,7 @@ const HeroSection = () => {
               }}
               transition={{ duration: 0.2 }}
             >
-              <div className="flex justify-between items-center mb-6">
+              {/* <div className="flex justify-between items-center mb-6">
                 <div className="flex space-x-2">
                   <motion.div
                     className="w-3 h-3 rounded-full bg-red-500"
@@ -264,7 +252,8 @@ const HeroSection = () => {
                   <span className="text-orange-500">{"}"}</span>
                   <span className="text-gray-500">;</span>
                 </div>
-              </div>
+              </div> */}
+              <img src="/imgs/llo.jpg" alt="My photo" width={500} height={300} />
             </motion.div>
           </div>
         </motion.div>
