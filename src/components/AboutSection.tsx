@@ -57,7 +57,7 @@ const AboutSection = () => {
           viewport={{ once: true, amount: 0.2 }}
           variants={itemVariants}
         >
-          About Me
+          About LLO
         </motion.h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-14">
@@ -188,7 +188,7 @@ const AboutSection = () => {
               </motion.div>
 
 
-              {/* <motion.div
+              <motion.div
                 variants={itemVariants}
                 whileHover={{
                   y: -5,
@@ -224,7 +224,7 @@ const AboutSection = () => {
                     </div>
                   </CardContent>
                 </Card>
-              </motion.div> */}
+              </motion.div>
             </div>
           </motion.div>
 
