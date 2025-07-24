@@ -60,7 +60,7 @@ const AboutSection = () => {
           About LLO
         </motion.h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-14">
+        <div className="grid grid-cols-1 lg:grid-cols-8 gap-14">
           {/* Content Column */}
           <motion.div
             className="lg:col-span-8 space-y-6"
@@ -69,7 +69,7 @@ const AboutSection = () => {
             viewport={{ once: true, amount: 0.2 }}
             variants={containerVariants}
           >
-            <motion.div variants={itemVariants}>
+            {/* <motion.div variants={itemVariants}>
               <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
                 <FileText className="w-5 h-5 text-primary" /> Bio
               </h3>
@@ -79,7 +79,7 @@ const AboutSection = () => {
                 combine technical expertise with creative problem-solving to
                 build user-centric applications.
               </p>
-            </motion.div>
+            </motion.div> */}
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <motion.div
@@ -92,20 +92,23 @@ const AboutSection = () => {
                 <Card className="h-full border-primary/10 bg-card/50 backdrop-blur-sm">
                   <CardContent className="pt-6">
                     <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                      <GraduationCap className="w-5 h-5 text-primary" />{" "}
-                      Education
+                      {/* Replace GraduationCap with Briefcase for a networking/business theme */}
+                      <Briefcase className="w-5 h-5 text-primary" />{" "}
+                      High-impact networking
                     </h3>
                     <div className="space-y-2">
-                      <p className="font-medium">BSc in Computer Science</p>
+                      {/* <p className="font-medium">BSc in Computer Science</p> */}
                       <p className="text-sm text-muted-foreground">
-                        FUNAAB (Federal University of Agriculture, Abeokuta)
+                        Connect with driven professionals across diverse industries, all in one dynamic space. 
+                        Whether you're building a brand, launching a startup, or seeking partnerships, 
+                        this is where real connections turn into meaningful opportunities.
                       </p>
-                      <p className="text-sm text-muted-foreground">
+                      {/* <p className="text-sm text-muted-foreground">
                         2023 - Present
-                      </p>
-                      <p className="text-sm text-muted-foreground">
+                      </p> */}
+                      {/* <p className="text-sm text-muted-foreground">
                         NACOS Treasurer (2024/2025)
-                      </p>
+                      </p> */}
                     </div>
                   </CardContent>
                 </Card>
@@ -121,21 +124,25 @@ const AboutSection = () => {
                 <Card className="h-full border-primary/10 bg-card/50 backdrop-blur-sm">
                   <CardContent className="pt-6">
                     <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                      <Briefcase className="w-5 h-5 text-primary" /> Experience
+                      {/* Use a chat or conversation icon for "Insightful conversations" */}
+                      <FileText className="w-5 h-5 text-primary" />
+                      Insightful conversations
                     </h3>
                     <div className="space-y-4">
                       <div>
-                        <p className="font-medium">
+                        {/* <p className="font-medium">
                           Back-end Developement Intern
-                        </p>
+                        </p> */}
                         <p className="text-sm text-muted-foreground">
-                          HNG Internship
+                          Engage in thought-provoking discussions that go beyond the surface. 
+                          Hear fresh perspectives, exchange ideas, 
+                          and gain clarity on challenges you didn’t even know you had.
                         </p>
-                        <p className="text-sm text-muted-foreground">
+                        {/* <p className="text-sm text-muted-foreground">
                           March 2025
-                        </p>
+                        </p> */}
                       </div>
-                      <div>
+                      {/* <div>
                         <p className="font-medium">Web Development</p>
                         <p className="text-sm text-muted-foreground">
                           Arit Developer Circle
@@ -143,7 +150,7 @@ const AboutSection = () => {
                         <p className="text-sm text-muted-foreground">
                           Backend Dev
                         </p>
-                      </div>
+                      </div> */}
                     </div>
                   </CardContent>
                 </Card>
@@ -159,21 +166,22 @@ const AboutSection = () => {
                 <Card className="h-full border-primary/10 bg-card/50 backdrop-blur-sm">
                   <CardContent className="pt-6">
                     <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                      <Briefcase className="w-5 h-5 text-primary" /> Experience
+                      <GraduationCap className="w-5 h-5 text-primary" /> Mentorship & Learning
                     </h3>
                     <div className="space-y-4">
                       <div>
-                        <p className="font-medium">
+                        {/* <p className="font-medium">
                           Software Development Intern
-                        </p>
+                        </p> */}
                         <p className="text-sm text-muted-foreground">
-                          Zidio Internship
+                          Tap into the wisdom of seasoned leaders and peers who’ve walked the path before you. 
+                          From micro-workshops to casual knowledge sharing, every moment is a chance to grow.
                         </p>
-                        <p className="text-sm text-muted-foreground">
+                        {/* <p className="text-sm text-muted-foreground">
                           Feb - May 2025
-                        </p>
+                        </p> */}
                       </div>
-                      <div>
+                      {/* <div>
                         <p className="font-medium">Student Intern</p>
                         <p className="text-sm text-muted-foreground">
                           Kibo School
@@ -181,7 +189,7 @@ const AboutSection = () => {
                         <p className="text-sm text-muted-foreground">
                           Python Programming
                         </p>
-                      </div>
+                      </div> */}
                     </div>
                   </CardContent>
                 </Card>
@@ -198,21 +206,23 @@ const AboutSection = () => {
                 <Card className="h-full border-primary/10 bg-card/50 backdrop-blur-sm">
                   <CardContent className="pt-6">
                     <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                      <Briefcase className="w-5 h-5 text-primary" /> Experience
+                      <Award className="w-5 h-5 text-primary" /> Collaboration opportunities
                     </h3>
                     <div className="space-y-4">
                       <div>
-                        <p className="font-medium">
+                        {/* <p className="font-medium">
                           Software Development Intern
-                        </p>
+                        </p> */}
                         <p className="text-sm text-muted-foreground">
-                          Zidio Internship
+                          Brainstorm bold ideas, find teammates for passion projects, 
+                          or co-create solutions to real-world problems. 
+                          It's not just networking — it's groundwork for powerful partnerships.
                         </p>
-                        <p className="text-sm text-muted-foreground">
+                        {/* <p className="text-sm text-muted-foreground">
                           Feb - May 2025
-                        </p>
+                        </p> */}
                       </div>
-                      <div>
+                      {/* <div>
                         <p className="font-medium">Graphic Designer</p>
                         <p className="text-sm text-muted-foreground">
                           SLIIT Media Unit
@@ -220,7 +230,7 @@ const AboutSection = () => {
                         <p className="text-sm text-muted-foreground">
                           Freelance
                         </p>
-                      </div>
+                      </div> */}
                     </div>
                   </CardContent>
                 </Card>
@@ -229,7 +239,7 @@ const AboutSection = () => {
           </motion.div>
 
           {/* Profile Column */}
-          <motion.div
+          {/* <motion.div
             className="lg:col-span-4 flex flex-col items-center lg:items-start gap-6"
             initial="hidden"
             whileInView="visible"
@@ -249,9 +259,9 @@ const AboutSection = () => {
                 />
                 <AvatarFallback>Mista Log</AvatarFallback>
               </Avatar>
-              {/* <div className="absolute -bottom-2 -right-2 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+              <div className="absolute -bottom-2 -right-2 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
                 3.41 GPA
-              </div> */}
+              </div>
             </motion.div>
 
             <motion.div
@@ -294,7 +304,7 @@ const AboutSection = () => {
                 </a>
               </Button>
             </motion.div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>
