@@ -6,7 +6,7 @@ import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Links } from "@/data/links";
 
-const ContactSection = () => {
+const RegisterSection = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
@@ -113,24 +113,15 @@ const handleSubmit = async (e: React.FormEvent) => {
 
 
   return (
-    <section id="contact" className="py-14 bg-background">
+    <section className="py-14 bg-background">
       <div className="section-container">
-        <h2 className="section-heading">For Enquiries</h2>
+        <h2 className="section-heading">Register Now</h2>
         <p className="text-muted-foreground max-w-2xl mb-12">
-          Want to sponsor the event? Fill up the form and we'll get back to you as soon as possible.
+          Join and be part of the largest innovation gathering.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="md:col-span-1 space-y-8">
-            <div>
-              <h3 className="text-lg font-semibold mb-3 text-foreground">
-                Contact Information
-              </h3>
-              <p className="text-muted-foreground">
-                Fill up the form and I'll get back to you as soon as possible, Thank you.
-              </p>
-            </div>
-
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <Mail className="w-5 h-5 mt-1 text-primary" />
@@ -303,4 +294,4 @@ const handleSubmit = async (e: React.FormEvent) => {
   );
 };
 
-export default ContactSection;
+export default RegisterSection;
