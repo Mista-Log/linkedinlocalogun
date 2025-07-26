@@ -5,38 +5,31 @@ import { LucideIcon } from "lucide-react";
 export type SkillCategory = {
   name: string;
   icon: LucideIcon;
-  skills: string[];
 };
 
 export const skillCategories: SkillCategory[] = [
   {
-    name: "Programming Languages",
-    icon: Terminal,
-    skills: ["JavaScript", "TypeScript", "Python", "Rust"],
-  },
-  {
-    name: "Frontend Development",
-    icon: Layout,
-    skills: ["React", "Next.js", "Tailwind CSS"],
-  },
-  {
-    name: "Backend Development",
-    icon: Code,
-    skills: ["Django", "Express.js", "Hono", "REST APIs"],
-  },
-  {
-    name: "Databases",
-    icon: Database,
-    skills: ["MongoDB", "PostgreSQL", "Sqlite3"],
-  },
-  {
-    name: "Tools & Technologies",
+    name: "Google Cloud",
     icon: Cpu,
-    skills: ["Postman", "Git", "Github"],
   },
   {
-    name: "Design",
-    icon: Palette,
-    skills: ["Figma", "draw.io", "Wireframing", "Prototyping"],
+    name: "Meta Technologies",
+    icon: Cpu,
+  },
+  {
+    name: "Nvidia Technologies",
+    icon: Cpu,
+  },
+  {
+    name: "Microsoft",
+    icon: Cpu,
+  },
+  {
+    name: "Amazon Web Services",
+    icon: Cpu,
+  },
+  {
+    name: "Digital Ocean",
+    icon: Cpu,
   },
 ];

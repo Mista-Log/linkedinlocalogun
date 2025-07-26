@@ -47,9 +47,9 @@ const SkillsSection = () => {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="section-heading">Skills</h2>
+          <h2 className="section-heading">Sponsors</h2>
           <p className="text-muted-foreground max-w-2xl mb-12">
-            I've worked with a range of languages and framework to build a scalable and maintainable Application.
+            Check out the list of amazig sponsors who are making this event possible.
           </p>
         </motion.div>
 
@@ -87,7 +87,7 @@ const SkillsSection = () => {
                 initial="hidden"
                 animate="visible"
               >
-                {category.skills.map((skill) => (
+                {/* {category.skills.map((skill) => (
                   <motion.span
                     key={skill}
                     className="inline-block px-3 py-1 bg-background border border-border rounded-full text-sm"
@@ -100,7 +100,7 @@ const SkillsSection = () => {
                   >
                     {skill}
                   </motion.span>
-                ))}
+                ))} */}
               </motion.div>
             </motion.div>
           ))}

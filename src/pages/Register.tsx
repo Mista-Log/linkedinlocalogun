@@ -5,9 +5,9 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
-import ProjectsSection from "@/components/ProjectsSection";
+import ProjectsSection from "@/components/TeamSection";
 import SkillsSection from "@/components/SkillsSection";
-import AchievementsSection from "@/components/AchievementsSection";
+import AchievementsSection from "@/components/SpeakersSection";
 import ContactSection from "@/components/ContactSection";
 import RegisterSection from "@/components/RegisterSection";
 

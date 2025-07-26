@@ -1,31 +1,30 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronUp, Code, ExternalLink, Github } from "lucide-react";
-import { projects } from "@/data/projects";
+import { teams } from "@/data/teams";
 import LazyImage from "@/components/LazyImage"; // Import our LazyImage component
 
-const ProjectsSection = () => {
-  const [visibleProjects, setVisibleProjects] = useState(3);
+const Team = () => {
+  const [visibleTeams, setVisibleTeams] = useState(3);
 
-  const showMoreProjects = () => {
-    setVisibleProjects(projects.length);
+  const showMoreTeams = () => {
+    setVisibleTeams(teams.length);
   };
 
-  const showLessProjects = () => {
-    setVisibleProjects(3);
+  const showLessTeams = () => {
+    setVisibleTeams(3);
   };
 
   return (
-    <section id="projects" className="pt-14 bg-background/50">
+    <section id="teams" className="pt-14 bg-background/50">
       <div className="section-container">
-        <h2 className="section-heading">Projects</h2>
+        <h2 className="section-heading">The Team</h2>
         <p className="text-muted-foreground max-w-2xl mb-12">
-          Here are some of the projects I've worked on, showcasing my skills in
-          various technologies and frameworks. Each project highlights different aspects of my experience
+          Meet the talented individuals behind this event. Each member brings unique skills and passion to make this event a success.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.slice(0, visibleProjects).map((project, index) => (
+          {teams.slice(0, visibleTeams).map((project, index) => (
             <div
               key={project.id}
               className="bg-card rounded-lg overflow-hidden shadow-sm border border-border card-hover"
@@ -40,17 +39,6 @@ const ProjectsSection = () => {
                 />
                 <div className="absolute inset-0 bg-primary/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
                   <div className="flex space-x-4">
-                    {project.links.github && (
-                      <a
-                        href={project.links.github}
-                        className="bg-background text-foreground p-2 rounded-full hover:bg-card transition-colors"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={`GitHub repository for ${project.title}`}
-                      >
-                        <Github size={20} />
-                      </a>
-                    )}
                     {project.links.live && (
                       <a
                         href={project.links.live}
@@ -73,34 +61,8 @@ const ProjectsSection = () => {
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-xs bg-primary/10 text-primary rounded-full px-3 py-1"
-                    >
-                      {tag}
-                    </span>
-                  ))}
                 </div>
                 <div className="flex gap-3 pt-2">
-                  {project.links.github && (
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="flex gap-2 items-center"
-                      asChild
-                    >
-                      <a
-                        href={project.links.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={`View ${project.title} on GitHub`}
-                      >
-                        <Github size={16} />
-                        <span>GitHub</span>
-                      </a>
-                    </Button>
-                  )}
                   {project.links.live && (
                     <Button
                       variant="outline"
@@ -115,7 +77,7 @@ const ProjectsSection = () => {
                         aria-label={`View live demo of ${project.title}`}
                       >
                         <ExternalLink size={16} />
-                        <span>Live Demo</span>
+                        <span>See Profile</span>
                       </a>
                     </Button>
                   )}
@@ -126,23 +88,23 @@ const ProjectsSection = () => {
         </div>
 
         <div className="flex justify-center mt-12">
-          {visibleProjects < projects.length ? (
+          {visibleTeams < teams.length ? (
             <Button
               variant="outline"
-              onClick={showMoreProjects}
+              onClick={showMoreTeams}
               className="group"
             >
-              <span>Show More Projects</span>
+              <span>See all team members</span>
               <Code
                 size={16}
                 className="ml-2 group-hover:translate-x-1 transition-transform"
               />
             </Button>
           ) : (
-            visibleProjects > 3 && (
+            visibleTeams > 3 && (
               <Button
                 variant="outline"
-                onClick={showLessProjects}
+                onClick={showLessTeams}
                 className="group"
               >
                 <span>Show Less</span>
@@ -159,4 +121,4 @@ const ProjectsSection = () => {
   );
 };
 
-export default ProjectsSection;
+export default Team;

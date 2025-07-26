@@ -1,25 +1,21 @@
 
-export type Project = {
+export type Team = {
   id: number;
   title: string;
   description: string;
   image: string;
-  tags: string[];
   links: {
-    github: string;
     live: string;
   };
 };
 
-export const projects: Project[] = [
+export const teams: Team[] = [
   {
     id: 1,
     title: "Vortisys - AI Studio",
     description: "A web2 AI Studio for building AI applications, featuring a user-friendly interface and integration with various AI models.",
     image: "/imgs/p4.png",
-    tags: ["Next.js", "Vercel", "Typescript", "AI Models"],
     links: {
-      github: "https://github.com/Mista-Log/VortisysWeb2",
       live: "https://vortisys-web2.vercel.app/",
     },
   },
@@ -28,10 +24,8 @@ export const projects: Project[] = [
     title: "Transferme-Banking-App",
     description: "A Back-end Banking Application built with Python, Flask, providing secure and efficient banking services for users.",
     image: "/imgs/p1.png",
-    tags: ["Python", "Django", "DRF", "FastAPI"],
     links: {
-      github: "https://github.com/Mista-Log/Transferme-Banking-App",
-      live: "",
+      live: "https://vortisys-web2.vercel.app/",
     },
   },
   {
@@ -39,9 +33,7 @@ export const projects: Project[] = [
     title: "Zidio-Product-Management-App",
     description: "A project management application built with Django fullstack for organizing tasks, projects, and team collaboration.",
     image: "/imgs/p2.png",
-    tags: ["Django", "HTML & CSS", "Authentication", "Render SAAS"],
     links: {
-      github: "https://github.com/Mista-Log/Zidio-Product-Management-App",
       live: "https://zidio-product-management-app.onrender.com/"
     },
   },
@@ -50,10 +42,8 @@ export const projects: Project[] = [
     title: "E-Commerce App",
     description: "A full-stack e-commerce application built with Django, providing a seamless shopping experience with product listings, cart management, and user authentication.",
     image: "/imgs/p2.png",
-    tags: ["Django", "HTML & CSS", "Authentication", "Django_Rest-Framework"],
     links: {
-      github: "https://github.com/Mista-Log/E-commerce-",
-      live: ""
+      live: "https://vortisys-web2.vercel.app/"
     },
   },
   // {

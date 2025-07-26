@@ -5,9 +5,9 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
-import ProjectsSection from "@/components/ProjectsSection";
+import TeamSection from "@/components/TeamSection";
 import SkillsSection from "@/components/SkillsSection";
-import AchievementsSection from "@/components/AchievementsSection";
+import Speakers from "@/components/SpeakersSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import ScrollProgressBar from "@/components/ScrollProgressBar";
@@ -63,9 +63,9 @@ const Index = () => {
         <Home />
         <HeroSection />
         <AboutSection />
-        <ProjectsSection />
+        <Speakers />
         <SkillsSection />
-        <AchievementsSection />
+        <TeamSection />
         <ContactSection />
       </Scrollspy>
       <Footer />
