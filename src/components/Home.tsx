@@ -6,7 +6,7 @@ import { Links } from "@/data/links";
 const Home = () => {
   return (
     <div
-      className="h-screen bg-[url('/public/1000704668.svg')] bg-cover bg-center flex items-center justify-center"
+      className="h-screen bg-[url('/1000704668.svg')] bg-cover bg-center flex items-center justify-center"
     >
     <section
       id="home"
