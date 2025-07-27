@@ -10,12 +10,6 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const { toast } = useToast();
 
-  const handledownload = () => {
-    toast({
-      title: "Downloading Resume",
-      description: "Your download will start shortly.",
-    });
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,9 +28,9 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "About", href: "#about" },
-    { name: "Register", href: "#register" },
+    { name: "Register", href: "/register" },
     { name: "Speakers", href: "#speakers" },
-    { name: "Sponsor", href: "#sponsor" },
+    { name: "Sponsors", href: "#sponsors" },
     { name: "Faq", href: "#faq" },
     { name: "Contact", href: "#contact" },
   ];

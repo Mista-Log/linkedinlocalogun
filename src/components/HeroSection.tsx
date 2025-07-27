@@ -41,15 +41,6 @@ const HeroSection = () => {
 
       <div className="section-container flex flex-col lg:flex-row items-center justify-between gap-10">
         <div className="flex flex-col max-w-xl space-y-6 text-center lg:text-left">
-          {/* <motion.span
-            className="text-sm md:text-base font-medium text-primary opacity-90"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            Hello! I'm
-          </motion.span> */}
-
           <motion.h1
             className="text-4xl text-[#0459AC] md:text-5xl lg:text-6xl font-bold"
             initial={{ opacity: 0, y: 20 }}
@@ -85,16 +76,6 @@ const HeroSection = () => {
           >
             Where Connections Spark Growth
           </motion.p>
-
-          {/* <motion.p
-            className="text-muted-foreground"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-          >
-            Where Connections Spark Growth
-          </motion.p> */}
-
           <motion.div
             className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 relative z-10"
             initial={{ opacity: 0, y: 20 }}

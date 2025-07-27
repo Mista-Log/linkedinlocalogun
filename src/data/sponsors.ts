@@ -2,12 +2,12 @@
 import { Code, Database, Layout, Terminal, Cpu, Palette } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
-export type SkillCategory = {
+export type SponsorCategory = {
   name: string;
   icon: LucideIcon;
 };
 
-export const skillCategories: SkillCategory[] = [
+export const sponsorCategories: SponsorCategory[] = [
   {
     name: "Google Cloud",
     icon: Cpu,

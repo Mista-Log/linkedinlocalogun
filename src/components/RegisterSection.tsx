@@ -10,7 +10,6 @@ const RegisterSection = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
     subject: "",
     message: "",
   });
@@ -74,7 +73,6 @@ const handleSubmit = async (e: React.FormEvent) => {
 
   const payload = new URLSearchParams();
   payload.append("name", formData.name);
-  payload.append("email", formData.email);
   payload.append("subject", formData.subject);
   payload.append("message", formData.message);
 
@@ -96,7 +94,6 @@ const handleSubmit = async (e: React.FormEvent) => {
 
     setFormData({
       name: "",
-      email: "",
       subject: "",
       message: "",
     });
@@ -212,7 +209,6 @@ const handleSubmit = async (e: React.FormEvent) => {
                 value="https://web3forms.com/success"
               />
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label
                     htmlFor="name"
@@ -228,24 +224,6 @@ const handleSubmit = async (e: React.FormEvent) => {
                     onChange={handleChange}
                     required
                   />
-                </div>
-                <div className="space-y-2">
-                  <label
-                    htmlFor="email"
-                    className="text-sm font-medium text-foreground"
-                  >
-                    Your Email
-                  </label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder="LinkedinLocalOgun@example.com"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
               </div>
 
               <div className="space-y-2">
@@ -253,12 +231,12 @@ const handleSubmit = async (e: React.FormEvent) => {
                   htmlFor="subject"
                   className="text-sm font-medium text-foreground"
                 >
-                  Subject
+                  School/Institution
                 </label>
                 <Input
                   id="subject"
                   name="subject"
-                  placeholder="For Sponsorship"
+                  placeholder="University/College"
                   value={formData.subject}
                   onChange={handleChange}
                   required
@@ -284,7 +262,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               </div>
 
               <Button type="submit" className="w-full" disabled={isSubmitting}>
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {isSubmitting ? "Registering..." : "Register Now"}
               </Button>
             </form>
           </div>

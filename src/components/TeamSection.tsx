@@ -24,28 +24,28 @@ const Team = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {teams.slice(0, visibleTeams).map((project, index) => (
+          {teams.slice(0, visibleTeams).map((team, index) => (
             <div
-              key={project.id}
+              key={team.id}
               className="bg-card rounded-lg overflow-hidden shadow-sm border border-border card-hover"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="h-48 bg-muted relative overflow-hidden">
                 {/* Replace img with LazyImage */}
                 <LazyImage
-                  src={project.image}
-                  alt={project.title}
+                  src={team.image}
+                  alt={team.title}
                   imgClassName="w-full h-48 object-cover"
                 />
                 <div className="absolute inset-0 bg-primary/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
                   <div className="flex space-x-4">
-                    {project.links.live && (
+                    {team.links.live && (
                       <a
-                        href={project.links.live}
+                        href={team.links.live}
                         className="bg-background text-foreground p-2 rounded-full hover:bg-card transition-colors"
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label={`Live demo for ${project.title}`}
+                        aria-label={`Live demo for ${team.title}`}
                       >
                         <ExternalLink size={20} />
                       </a>
@@ -55,15 +55,15 @@ const Team = () => {
               </div>
               <div className="p-6 space-y-4">
                 <h3 className="text-xl font-bold text-foreground">
-                  {project.title}
+                  {team.title}
                 </h3>
                 <p className="text-muted-foreground text-sm">
-                  {project.description}
+                  {team.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
                 </div>
                 <div className="flex gap-3 pt-2">
-                  {project.links.live && (
+                  {team.links.live && (
                     <Button
                       variant="outline"
                       size="sm"
@@ -71,10 +71,10 @@ const Team = () => {
                       asChild
                     >
                       <a
-                        href={project.links.live}
+                        href={team.links.live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label={`View live demo of ${project.title}`}
+                        aria-label={`View live demo of ${team.title}`}
                       >
                         <ExternalLink size={16} />
                         <span>See Profile</span>

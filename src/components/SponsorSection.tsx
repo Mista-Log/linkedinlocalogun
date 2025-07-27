@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { skillCategories } from "@/data/skills";
+import { sponsorCategories } from "@/data/sponsors";
 
-const SkillsSection = () => {
+const SponsorSection = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -39,7 +39,7 @@ const SkillsSection = () => {
   };
 
   return (
-    <section id="skills" className=" bg-background">
+    <section id="sponsors" className=" bg-background">
       <div className="section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -60,7 +60,7 @@ const SkillsSection = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
-          {skillCategories.map((category, index) => (
+          {sponsorCategories.map((category, index) => (
             <motion.div
               key={category.name}
               className="bg-card rounded-lg p-6 shadow-sm border border-border hover:border-primary/20 transition-colors"
@@ -87,20 +87,6 @@ const SkillsSection = () => {
                 initial="hidden"
                 animate="visible"
               >
-                {/* {category.skills.map((skill) => (
-                  <motion.span
-                    key={skill}
-                    className="inline-block px-3 py-1 bg-background border border-border rounded-full text-sm"
-                    variants={skillItemVariants}
-                    whileHover={{
-                      scale: 1.05,
-                      backgroundColor: "rgba(var(--primary), 0.05)",
-                    }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    {skill}
-                  </motion.span>
-                ))} */}
               </motion.div>
             </motion.div>
           ))}
@@ -110,4 +96,4 @@ const SkillsSection = () => {
   );
 };
 
-export default SkillsSection;
+export default SponsorSection;

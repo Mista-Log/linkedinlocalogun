@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/TeamSection";
-import SkillsSection from "@/components/SkillsSection";
+import SkillsSection from "@/components/SponsorSection";
 import AchievementsSection from "@/components/SpeakersSection";
 import ContactSection from "@/components/ContactSection";
 import RegisterSection from "@/components/RegisterSection";

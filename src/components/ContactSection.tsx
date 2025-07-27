@@ -23,51 +23,6 @@ const ContactSection = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  // const handleSubmit = async (e: React.FormEvent) => {
-  //   e.preventDefault();
-  //   setIsSubmitting(true);
-
-  //   const formPayload = {
-  //     // access_key: "6c14b370-ac51-45bc-b933-1a3ed381b3d1",
-  //     ...formData,
-  //   };
-
-  //   try {
-  //     const response = await fetch("https://getform.io/f/boloowea", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify(formPayload),
-  //     });
-
-  //     const data = await response.json();
-
-  //     if (!response.ok) throw new Error(data.message || "Submission failed");
-
-  //     toast({
-  //       title: "Message Sent!",
-  //       description: "Thank you for your message. I'll get back to you soon.",
-  //     });
-
-  //     // Reset form
-  //     setFormData({
-  //       name: "",
-  //       email: "",
-  //       subject: "",
-  //       message: "",
-  //     });
-  //   } catch (error) {
-  //     toast({
-  //       title: "Error",
-  //       description: error.message || "Failed to send message",
-  //       variant: "destructive",
-  //     });
-  //   } finally {
-  //     setIsSubmitting(false);
-  //   }
-  // };
-
 const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
   setIsSubmitting(true);

@@ -38,14 +38,6 @@ const AboutSection = () => {
       },
     },
   };
-
-  const handledownload = () => {
-    toast({
-      title: "Downloading Resume",
-      description: "Your download will start shortly.",
-    });
-  };
-
   return (
     <section id="about" className="py-14 relative bg-background">
       <div className="absolute top-0 inset-x-0 h-1/2 bg-gradient-to-b from-primary/5 to-background -z-10"></div>
@@ -69,18 +61,6 @@ const AboutSection = () => {
             viewport={{ once: true, amount: 0.2 }}
             variants={containerVariants}
           >
-            {/* <motion.div variants={itemVariants}>
-              <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
-                <FileText className="w-5 h-5 text-primary" /> Bio
-              </h3>
-              <p className="text-muted-foreground">
-                A computer science student with a passion for creating
-                innovative solutions. Specializing in software development, I
-                combine technical expertise with creative problem-solving to
-                build user-centric applications.
-              </p>
-            </motion.div> */}
-
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <motion.div
                 variants={itemVariants}
@@ -238,73 +218,6 @@ const AboutSection = () => {
             </div>
           </motion.div>
 
-          {/* Profile Column */}
-          {/* <motion.div
-            className="lg:col-span-4 flex flex-col items-center lg:items-start gap-6"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
-            variants={containerVariants}
-          >
-            <motion.div
-              className="relative"
-              variants={itemVariants}
-              whileHover={{ scale: 1.05 }}
-            >
-              <Avatar className="w-40 h-40 border-4 border-primary/20">
-                <AvatarImage
-                  src="/imgs/Profile (1).jpg"
-                  alt="Ibrahim Oloyede"
-                  loading="lazy"
-                />
-                <AvatarFallback>Mista Log</AvatarFallback>
-              </Avatar>
-              <div className="absolute -bottom-2 -right-2 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
-                3.41 GPA
-              </div>
-            </motion.div>
-
-            <motion.div
-              variants={itemVariants}
-              className="text-center lg:text-left"
-            >
-              <h3 className="text-2xl font-bold">Ibrahim Oloyede</h3>
-              <p className="text-muted-foreground">
-                A Computer Science Student
-              </p>
-            </motion.div>
-
-            <motion.div
-              variants={itemVariants}
-              className="flex flex-wrap gap-2 justify-center lg:justify-start"
-            >
-              <Badge variant="outline" className="bg-primary/10">
-                Python
-              </Badge>
-              <Badge variant="outline" className="bg-primary/10">
-                TypeScript
-              </Badge>
-              <Badge variant="outline" className="bg-primary/10">
-                JavaScript
-              </Badge>
-              <Badge variant="outline" className="bg-primary/10">
-                Cloud Automation
-              </Badge>
-            </motion.div>
-
-            <motion.div
-              variants={itemVariants}
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <Button className="gap-2" asChild onClick={handledownload}>
-                <a href={resumeUrl} download="Ibrahim_Oloyede_Resume.pdf">
-                  <Download className="w-4 h-4" />
-                  Download Resume
-                </a>
-              </Button>
-            </motion.div>
-          </motion.div> */}
         </div>
       </div>
     </section>
